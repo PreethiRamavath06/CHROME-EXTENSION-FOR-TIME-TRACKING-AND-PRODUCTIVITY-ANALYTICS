@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Extension for medium</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Extension</h1>
+    <p>Here's some information about my extension</p>
+document.addEventListener('DOMContentLoaded', function() {
+  var button = document.getElementById('button');
+  button.addEventListener('click', function() {
+    // Your extension's functionality goes here
+  });
+});
+{
+  "manifest_version": 2,
+  "name": "My Extension",
+  "version": "1.0",
+  "description": "A brief description of my extension",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var button = document.getElementById('button');
+  button.addEventListener('click', function() {
+    fetch('https://api.example.com/data')
+      .then(response => response.json())
+      .then(data => {
+        // Do something with the data
+      });
+  });
+});
+{
+  "manifest_version": 2,
+  "name": "My Extension",
+  "version": "1.0",
+  "description": "A brief description of my extension",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://api.example.com/*"
+  ]
+}
+  </div>
+</body>
+</html>
