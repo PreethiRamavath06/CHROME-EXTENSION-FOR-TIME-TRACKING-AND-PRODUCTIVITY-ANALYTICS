@@ -21,3 +21,7 @@
  different websites and provide insights into a user’s browsing behavior. The tool will automatically log time spent on websites, categorize them, and generate reports with visual analytics. Users can customize 
  
  website categories and set productivity goals. A backend will store user data, while a dashboard will allow users to review their productivity trends.##
+
+ ##output:
+
+ ![Image](https://github.com/user-attachments/assets/614d8203-f48f-494e-b8d5-472aa600d684)
